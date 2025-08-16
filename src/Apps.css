@@ -1,0 +1,589 @@
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    align-items: stretch;
+    height: auto;
+    padding: 1rem;
+    margin: 2rem auto;
+    gap: 1.5rem;
+    width: 95%;
+  }
+
+  .nav .child-1 {
+    font-size: 1.6rem;
+    text-align: center;
+    width: 100%;
+  }
+
+  .nav .child-2 ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    font-size: 1.3rem;
+  }
+
+  .nav .child-3 {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    gap: 1rem;
+  }
+
+  .nav .child-3 div {
+    flex: 1;
+    min-width: 220px;
+  }
+
+  .nav .child-3 div input {
+    width: 100%;
+    font-size: 1.1rem;
+  }
+
+  .nav .child-3 button {
+    flex: 0 0 140px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav {
+    padding: 0.8rem;
+  }
+
+  .nav .child-1 {
+    font-size: 1.2rem;
+  }
+
+  .nav .child-2 ul {
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.1rem;
+    gap: 8px;
+  }
+
+  .nav .child-3 {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.8rem;
+  }
+
+  .nav .child-3 div {
+    width: 100%;
+  }
+
+  .nav .child-3 div input {
+    font-size: 0.95rem;
+  }
+
+  .nav .child-3 button {
+    width: 100%;
+    font-size: 0.95rem;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .nav {
+    width: 95%;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    height: auto;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: space-between;
+  }
+
+  .nav .child-1 {
+    font-size: 1.6rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav .child-2 ul {
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    font-size: 1.5rem;
+  }
+
+  .nav .child-3 {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .nav .child-3 div {
+    flex: 1;
+    min-width: 250px;
+    justify-content: space-between;
+  }
+
+  .nav .child-3 div input {
+    width: 85%;
+    font-size: 1.1rem;
+  }
+
+  .nav .child-3 button {
+    font-size: 1.1rem;
+    width: 150px;
+  }
+}
+/* heropage componenet style */
+/*  Tablet view: 769px – 1024px */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .hero-container {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .hero-container .child-1,
+  .hero-container .child-2 {
+    width: 100%;
+  }
+
+  .hero-container .child-1 .child1 {
+    height: auto;
+    padding: 1.5rem 1rem;
+  }
+
+  .hero-container .child-1 .child1 .text-1 {
+    font-size: 3rem;
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+
+  .hero-container .child-1 .child1 .text-2 {
+    font-size: 1.1rem;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .hero-container .child-1 .child2 {
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+  }
+  .hero-container .child-2 {
+    display: none;
+  }
+  .hero-container .child-1 .child1 .text-1 p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .hero-container .child-1 .child2 .img {
+    width: 18rem;
+    height: 16rem;
+  }
+
+  .hero-container .child-2 .img img {
+    height: 50rem;
+  }
+}
+
+/*  Mobile view: 0px – 768px */
+@media (max-width: 768px) {
+  .hero-container {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .hero-container .child-1,
+  .hero-container .child-2 {
+    width: 100%;
+  }
+
+  .hero-container .child-1 .child1 {
+    height: auto;
+    padding: 1rem;
+    border-radius: 1.5rem;
+  }
+
+  .hero-container .child-1 .child1 .text-1 {
+    font-size: 2rem;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .hero-container .child-1 .child1 .text-2 {
+    font-size: 1rem;
+    padding: 0.8rem;
+    text-align: center;
+  }
+
+  .hero-container .child-1 .child2 {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    height: auto;
+    display: none;
+  }
+
+  .hero-container .child-1 .child2 .img {
+    width: 90%;
+    height: auto;
+  }
+
+  .hero-container .child-2 {
+    padding: 0.5rem;
+    display: none;
+  }
+
+  .hero-container .child-2 .img img {
+    width: 100%;
+    height: auto;
+    border-radius: 1.5rem;
+  }
+  .hero-container .child-1 .child1 .text-1 p div {
+    width: 18rem;
+    display: none;
+  }
+}
+/* product component style  */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .pro-container .child {
+    width: 18rem;
+  }
+
+  .pro-container .child .img {
+    height: 20rem;
+  }
+
+  .pro-container .child .text p {
+    font-size: 1.2rem;
+  }
+}
+
+/*  Mobile View (max-width: 768px) */
+@media (max-width: 768px) {
+  .pro-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 0 1rem;
+  }
+
+  .pro-container .child {
+    width: 60%;
+  }
+
+  .pro-container .child .img {
+    height: 18rem;
+  }
+
+  .pro-container .child .text {
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .pro-container .child .text p {
+    font-size: 1.1rem;
+  }
+}
+/* Product-btn component style  */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .btn-session {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 2rem 2rem;
+  }
+
+  .btn-session .text {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .btn-session .btns {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
+  .btn-session .btns button {
+    width: 10rem;
+    height: 3.5rem;
+    font-size: 1.3rem;
+  }
+}
+
+/*  Mobile view (max-width: 768px) */
+@media (max-width: 768px) {
+  .btn-session {
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem 1rem;
+    gap: 1rem;
+  }
+
+  .btn-session .text {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  .btn-session .btns {
+    width: 100%;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .btn-session .btns button {
+    height: 3.2rem;
+    font-size: 1.2rem;
+  }
+}
+/* Text componenet style */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .text-container {
+    height: 30vh;
+  }
+
+  .text-container p {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+}
+
+/* Mobile view (up to 768px) */
+@media (max-width: 768px) {
+  .text-container {
+    height: auto;
+    padding: 1rem;
+  }
+
+  .text-container p {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+}
+/* contant componenet style */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .con-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
+  }
+
+  .con-container .child-1 {
+    width: 100%;
+    height: 25rem;
+    display: none;
+  }
+
+  .con-container .child-2 {
+    width: 100%;
+    padding: 2rem;
+  }
+
+  .con-container .child-2 .box-1 p {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .con-container .child-2 .box-2 {
+    flex-direction: row;
+    height: auto;
+    gap: 1rem;
+  }
+
+  .con-container .child-2 .box-2 .dabba-1,
+  .con-container .child-2 .box-2 .dabba-2 {
+    width: 50%;
+    padding: 2rem;
+    font-size: 1.1rem;
+  }
+}
+
+/* 🔻 Mobile (≤ 768px) */
+@media (max-width: 768px) {
+  .con-container {
+    flex-direction: column;
+    padding: 1.5rem 1rem;
+    gap: 1.5rem;
+  }
+
+  .con-container .child-1 {
+    width: 100%;
+    height: 20rem;
+    display: none;
+  }
+
+  .con-container .child-2 {
+    width: 100%;
+    padding: 1.5rem;
+  }
+
+  .con-container .child-2 .box-1 p {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .con-container .child-2 .box-2 {
+    flex-direction: column;
+    height: auto;
+    gap: 1.5rem;
+  }
+
+  .con-container .child-2 .box-2 .dabba-1,
+  .con-container .child-2 .box-2 .dabba-2 {
+    width: 100%;
+    padding: 1rem;
+    font-size: 0.8rem;
+  }
+}
+/* ProductDetail component style */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .ProductDetail .pro-con {
+    flex-direction: column;
+    height: auto;
+    padding: 2rem 1rem;
+    align-items: center;
+  }
+
+  .ProductDetail .pro-con .img {
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
+
+  .ProductDetail .pro-con .img img {
+    width: 80%;
+    height: auto;
+    border-radius: 2rem;
+  }
+
+  .ProductDetail .pro-con .text {
+    width: 100%;
+    text-align: center;
+    font-size: 1.8rem;
+    padding: 2rem 1rem;
+  }
+
+  .ProductDetail .pro-con .text button {
+    margin: 1rem auto;
+  }
+}
+
+/*  Mobile (≤768px) */
+@media (max-width: 768px) {
+  .ProductDetail .pro-con {
+    flex-direction: column;
+    width: 95%;
+    height: auto;
+    padding: 2rem 1rem;
+  }
+
+  .ProductDetail .pro-con .img {
+    width: 100%;
+    height: 20rem;
+    text-align: center;
+  }
+
+  .ProductDetail .pro-con .img img {
+    width: 90%;
+    height: 100%;
+    border-radius: 1.5rem;
+  }
+
+  .ProductDetail .pro-con .text {
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    gap: 12px;
+  }
+
+  .ProductDetail .pro-con .text button {
+    width: 80%;
+    margin: 1rem auto;
+  }
+}
+/* login component style */
+/*  Tablet (768px - 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .login-container {
+    flex-direction: column;
+    height: auto;
+    gap: 2rem;
+  }
+
+  .login-container .child-1,
+  .login-container .child-2 {
+    width: 90%;
+    height: 45rem;
+    border-radius: 2rem;
+  }
+  .login-container .child-1{
+    display: none;
+  }
+
+  .login-container .child-1 img {
+    width: 100%;
+    height: auto;
+    scale: 1;
+  }
+
+  .login-container .child-2 {
+    padding: 2rem;
+  }
+
+  .login-container .child-2 .cancelbtn {
+    position: absolute;
+    right: 1.5rem;
+    top: 1.5rem;
+    left: auto;
+  }
+
+  .login-container .child-2 form {
+    width: 80%;
+  }
+}
+
+/*  Mobile (≤768px) */
+@media (max-width: 768px) {
+  .login-container {
+    flex-direction: column;
+    height: auto;
+    padding: 1rem;
+  }
+
+  .login-container .child-1,
+  .login-container .child-2 {
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+  }
+  .login-container .child-1{
+    display: none;
+  }
+
+  .login-container .child-1 img {
+    width: 100%;
+    height: auto;
+    scale: 1;
+  }
+
+  .login-container .child-2 {
+    gap: 2rem;
+    padding: 2rem;
+  }
+
+  .login-container .child-2 .cancelbtn {
+    position: absolute;
+    right: 1.5rem;
+    top: 1.5rem;
+    left: auto;
+  }
+
+  .login-container .child-2 form {
+    width: 100%;
+    font-size: 1.4rem;
+  }
+
+  .login-container .child-2 form #email,
+  .login-container .child-2 form #password,
+  .login-container .child-2 form #sign {
+    width: 100%;
+  }
+}

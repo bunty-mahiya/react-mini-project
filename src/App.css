@@ -1,0 +1,592 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+.link{
+  text-decoration: none;
+}
+
+
+/* navber componenet style  */
+.nav {
+  width: 95%;
+  height: 5rem;
+  margin: 3rem;
+  border: 2px solid rgba(131, 119, 119, 0.74);
+  border-radius: 2rem;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav .child-1 {
+  font-size: 1.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: "Times New Roman";
+}
+
+.nav .child-2 ul {
+  text-transform: uppercase;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  font-family: "Times New Roman";
+  gap: 16px;
+}
+.nav .child-2 ul li {
+  cursor: pointer;
+  color: black;
+ 
+}
+
+.nav .child-3 {
+  display: flex;
+  gap: 1rem;
+}
+.nav .child-3 div {
+  width: 13rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 2rem;
+  background-color: #d0d7dd;
+}
+.nav .child-3 div input {
+  border: none;
+  width: 10rem;
+  font-size: 1rem;
+  text-transform: capitalize;
+  color: rgb(129, 126, 126);
+  height: 2.5rem;
+  border-radius: 0px 2rem 2rem 0px;
+  background-color: #d0d7dd;
+}
+.nav .child-3 div i {
+  font-size: 1.4rem;
+  margin: 0px 1rem;
+}
+.nav .child-3  button {
+  width: 5rem;
+  font-size: 1rem;
+  height: 2.4rem;
+  cursor: pointer;
+  display: flex;
+  text-transform: capitalize;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border: 1px solid rgba(87, 87, 150, 0.822);
+  color: rgba(46, 46, 56, 0.411);
+  border-radius: 2rem;
+  font-weight: 600;
+}
+.nav .child-3 button:hover {
+  background-color: #D0D7DD;
+  color: white;
+}
+/* heropage componenet style */
+
+.hero-container {
+  width: 100%;
+  padding: 0px 3rem;
+  display: flex;
+}
+.hero-container .child-1,
+.hero-container .child-2 {
+  width: 50%;
+}
+
+.hero-container .child-1 .child1,
+.hero-container .child-1 .child2 {
+  width: 100%;
+}
+.hero-container .child-1 .child1 {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 0px;
+  border-radius: 2rem;
+  background-color: #d1d6dc;
+}
+.hero-container .child-1 .child1 .text-1,
+.hero-container .child-1 .child1 .text-2 {
+  width: 100%;
+  /* border: 1px solid black; */
+}
+.hero-container .child-1 .child1 .text-1 {
+  font-size: 4rem;
+  text-transform: uppercase;
+  font-family: "Times New Roman";
+  padding: 3rem;
+  font-weight: bold;
+}
+.hero-container .child-1 .child1 .text-2 {
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  padding: 3rem;
+}
+.hero-container .child-1 .child1 .text-1 p div {
+  width: 20rem;
+  border: 2px solid black;
+}
+
+.hero-container .child-1 .child2 {
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hero-container .child-1 .child2 .img {
+  width: 17rem;
+  height: 20rem;
+  overflow: hidden;
+  border-radius: 2rem;
+}
+.hero-container .child-1 .child2 .img img {
+  width: 100%;
+  scale: 2;
+  translate: all linear 2s;
+}
+.hero-container .child-1 .child2 .img img:hover {
+  scale: 2.5;
+  translate: all ease 8s;
+}
+
+.hero-container .child-2 {
+  padding: 10px;
+  border: none;
+}
+.hero-container .child-2 .img img {
+  width: 100%;
+  height: 62rem;
+  border-radius: 2rem;
+}
+
+/* product component style  */
+.pro-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.pro-container .child {
+  width: 18rem;
+}
+.pro-container .child .img {
+  width: 100%;
+  height: 18rem;
+  border-radius: 2rem;
+}
+.pro-container .child .text {
+  padding: 1.5rem;
+}
+.pro-container .child .img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 1.2rem;
+  cursor: pointer;
+}
+.pro-container .child .text p {
+  font-size: 1.2rem;
+  font-weight: 600;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+/* Product-btn component style  */
+.btn-session{
+  width: 100%;
+  overflow-x: hidden;
+  padding: 0px 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.btn-session .text{
+  font-size: 1.8rem;
+  font-weight: 600;
+  font-family: 'Times New Roman';
+  text-transform: uppercase;
+}
+.btn-session .btns{
+  width: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+ 
+}
+
+.btn-session .btns button{
+  width: 9rem;
+  height: 3rem;
+  border:1px solid #B4B1A8;
+  background-color:white;
+  border-radius: 1.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+.btn-session .btns button:hover{
+  color: white;
+  background-color: black;
+}
+/* Text componenet style */
+.text-container {
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 3rem 0px;
+}
+.text-container p {
+  font-size: 3rem;
+  font-weight: 600;
+  font-family: "Times New Roman";
+  text-transform: capitalize;
+}
+/* contant componenet style */
+.con-container{
+  width: 100%;
+  display: flex;
+  padding: 2rem;
+  gap: 2rem;
+}
+.con-container .child-1{
+  width: 30%;
+  height:38rem ;
+  border-radius: 2rem;
+  overflow: hidden;
+}
+.con-container .child-1 img{
+  width: 100%;
+  height: 100%;
+  border-radius: 2rem;
+  scale: 1.1;
+}
+.con-container .child-2{
+  width: 70%;
+  padding: 3.5rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 2rem;
+  justify-content: space-between;
+  background-color: #6D8350;
+  
+}
+
+.con-container .child-2 .box-1 p{
+  font-size:4.5rem ;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: 'Times New Roman';
+}
+.con-container .child-2 .box-2{
+  width: 100%;
+  height: 13rem;
+  border: 1px solid  #383a3b62;
+  display: flex;
+  border-radius: 2rem;
+  gap: 3.5rem;
+}
+.con-container .child-2 .box-2 .dabba-1,.con-container .child-2 .box-2 .dabba-2{
+  width: 45%;
+  border-radius: 2rem;
+}
+.con-container .child-2 .box-2 .dabba-1,.con-container .child-2 .box-2 .dabba-2{
+  padding: 2rem;
+  font-size: 1.1rem;
+  text-transform: capitalize;
+  font-family: 'Times New Roman';
+}
+.con-container .child-2 .box-2 .dabba-1 h1,.con-container .child-2 .box-2 .dabba-2 h1{
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+} 
+
+/* ProductDetail component style */
+
+.ProductDetail{
+  width: 100%;
+  /* height: 80vh; */
+  /* border: 1px solid black; */
+  display: flex;
+   align-items: center;
+  justify-content: center; 
+}
+.ProductDetail .pro-con{
+  width: 80%;
+  height: 80vh;
+  /* border: 1px solid; */
+  display: flex;
+  gap: 2rem;
+  border-radius: 2rem;
+  background-color: #DEE0DF;
+  background-color: #DEE0DF;
+}
+.ProductDetail .pro-con .text{
+  /* border: 1px solid black; */
+  padding: 2rem;
+  font-size: 2rem;
+  overflow: hidden;
+  font-weight: 500;
+  text-transform: capitalize;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+  width: 60%;
+  
+}
+.ProductDetail .pro-con .text button{
+ width: 10rem;
+ height: 4rem;
+  font-size: 1.4rem;
+  cursor: pointer;
+  text-transform: capitalize;
+  background-color: white;
+  border: none;
+  color: rgba(46, 46, 56, 0.411);
+  color: white;
+  border-radius: 1rem;
+  background-color: black;
+  font-weight: 300;
+  margin: 1rem 1rem;
+}
+.ProductDetail .pro-con .text button:hover{
+   background-color:white;
+  color: black;
+}
+.ProductDetail .pro-con .img{
+  width: 35%;
+  height: 100%;
+  /* border: 1px solid black; */
+  overflow: hidden;
+
+}
+.ProductDetail .pro-con .img img{
+  width: 90%;
+  height: 100%;
+  border-radius: 2rem 0px 0px 2rem;
+}
+/* login component style */
+
+.login-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  padding: 2rem;
+}
+.login-container .child-1{
+  width: 30%;
+  height: 100%;
+  border: 1px solid black;
+  border-radius: 2rem 0px 0px 2rem;
+  padding: 1.3rem;
+  overflow: hidden;
+}
+
+.login-container .child-1 img{
+  width: 100%;
+  height: 100%;
+  scale: 1.2;
+}
+.login-container .child-2{
+  width: 40%;
+  height: 100%;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap:1.2rem ;
+  border-radius: 0px 2rem 2rem 0px;
+  background-color: #6D8350;
+}
+.login-container .child-2 .cancelbtn{
+  width: 3rem;
+  height: 3rem;
+  background-color: white;
+  position: relative;
+  left: 21rem;
+  top: -4rem;
+  font-size: 1.7rem;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login-container .child-2 .text{
+  font-size: 1.3rem;
+  text-transform: capitalize;
+}
+.login-container .child-2 .text p{
+  font-size: 1.1rem;
+  color: #d1d6dc;
+}
+.login-container .child-2 form{
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+  font-size: 1.3rem;
+  text-transform: capitalize;
+}
+.login-container .child-2 form #sign{
+  height: 2.2rem;
+  font-size:1.1rem ;
+  text-transform: capitalize;
+  font-weight: 500;
+  border-radius: 1.4rem;
+}
+.login-container .child-2 form #email , .login-container .child-2 form #password{
+  height: 2.2rem;
+  font-size:1rem ;
+  text-transform: capitalize;
+  font-weight: 600;
+  border-radius: 1.4rem;
+  text-indent: 2rem;
+
+}
+.login-container .child-2 form span{
+  font-size: 0.7rem;
+  text-transform: capitalize;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/* add to cart style component */
+
+.add-to-cart {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-to-cart .pro-con {
+  width: 80%;
+  height: 80vh;
+  display: flex;
+  gap: 2rem;
+  border-radius: 2rem;
+  background-color: #DEE0DF;
+}
+
+.add-to-cart .pro-con .text {
+  padding: 2rem;
+  font-size: 2rem;
+  overflow: hidden;
+  font-weight: 500;
+  text-transform: capitalize;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  justify-content: center;
+  width: 60%;
+}
+
+.add-to-cart .pro-con .text button {
+  width: 10rem;
+  height: 4rem;
+  font-size: 1.4rem;
+  cursor: pointer;
+  text-transform: capitalize;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 1rem;
+  font-weight: 300;
+  margin: 1rem 1rem;
+}
+
+.add-to-cart .pro-con .text button:hover {
+  background-color: white;
+  color: black;
+}
+
+.add-to-cart .pro-con .img {
+  width: 35%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.add-to-cart .pro-con .img img {
+  width: 90%;
+  height: 100%;
+  border-radius: 2rem 0px 0px 2rem;
+}
+
+/* Tablet view */
+@media (max-width: 1024px) {
+  .add-to-cart .pro-con {
+    flex-direction: column;
+    height: auto;
+    width: 90%;
+  }
+
+  .add-to-cart .pro-con .text {
+    width: 100%;
+    font-size: 1.8rem;
+    align-items: center;
+    text-align: center;
+  }
+
+  .add-to-cart .pro-con .img {
+    width: 100%;
+    height: auto;
+  }
+
+  .add-to-cart .pro-con .img img {
+    width: 100%;
+    border-radius: 0 0 2rem 2rem;
+  }
+}
+
+/* Mobile view */
+@media (max-width: 600px) {
+  .add-to-cart {
+    gap: 2rem;
+  }
+
+  .add-to-cart .pro-con {
+    flex-direction: column;
+    width: 95%;
+    padding: 1rem;
+  }
+
+  .add-to-cart .pro-con .text {
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
+
+  .add-to-cart .pro-con .text button {
+    width: 100%;
+    margin: 1rem 0;
+  }
+
+  .add-to-cart .pro-con .img img {
+    border-radius: 0 0 1.5rem 1.5rem;
+  }
+}
