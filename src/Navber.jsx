@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 const Navber = ({ setinputData,setname,counts}) => {
   const [uservalue, setuservalue] = useState(null);
-  const [data, setdata] = useState(null);
+  const [data, setdata] = useState([]);
   // const [filter, setfilter] = useState(null);
   let navigate = useNavigate();
   useEffect(() => {
@@ -11,7 +11,6 @@ const Navber = ({ setinputData,setname,counts}) => {
         return pre.json();
       })
       .then((json) => {
-        //console.log(json);
         setdata(json);
       });
   }, []);
@@ -21,10 +20,8 @@ const Navber = ({ setinputData,setname,counts}) => {
   }
   useEffect(() => {
     if (uservalue && data) {
-      let filterData = data.filter((vale) =>
-        vale.title.toLowerCase().includes(uservalue.toLowerCase())
+      let filterData = data.filter((vale) => vale.title.toLowerCase().includes(uservalue.toLowerCase())
       );
-      console.log(filterData);
       setinputData(filterData);
       // setfilter(filterData);
       navigate("/filter/");
@@ -33,8 +30,7 @@ const Navber = ({ setinputData,setname,counts}) => {
 
   return (
     <>
-      {/* {console.log(uservalue)
-    } */}
+     
       <div className="nav">
         <div className="child-1">
           {" "}
@@ -65,8 +61,7 @@ const Navber = ({ setinputData,setname,counts}) => {
             <input
               onKeyDown={(e) => {
                 if (e.key === "Enter") {
-                  console.log(e.target.value);
-                  settingValue(e.target.value);
+                  settingValue(e.target.value.trim().replace(/\s+/g," "));
                   setname(e.target.value);
                   e.target.value = "";
                 }
@@ -80,7 +75,7 @@ const Navber = ({ setinputData,setname,counts}) => {
             <button className="login">Login</button>
           </Link>
           <Link className="link links" to={"/addcart/"}>
-            <button className="sign in"><i class="ri-shopping-cart-line"></i>{counts}</button>
+            <button className="sign in"><i className="ri-shopping-cart-line"></i>{counts}</button>
           </Link>
         </div>
       </div>

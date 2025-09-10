@@ -1,4 +1,4 @@
-import React from "react";
+import ShimmerProductCard from "./Shimmer";
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import Text from "./Text";
@@ -17,7 +17,7 @@ const Summer = () => {
       });
   }, []);
   if (!state) {
-    return <p>Loading data</p>;
+    return (<><ShimmerProductCard/></>);
   } else {
     return (
       <>
@@ -60,7 +60,7 @@ const Winter = () => {
       });
   }, []);
   if (!state) {
-    return <p>Loading data</p>;
+    return (<><ShimmerProductCard/></>);
   } else {
     return (
       <>
@@ -103,7 +103,7 @@ const Monsoon = () => {
       });
   }, []);
   if (!state) {
-    return <p>Loading data</p>;
+    return (<><ShimmerProductCard/></>);
   } else {
     return (
       <>

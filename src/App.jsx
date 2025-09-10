@@ -1,12 +1,7 @@
 import "./App.css";
 import "./Apps.css";
 import Navber from "./Navber";
-import Heropage from "./Heropage";
 import Product from "./Product";
-import Footer from "./Footer";
-import Productbtn from "./Product-btn";
-import Text from "./Text";
-import Contant from "./Contant";
 import Women from "./Women";
 import Mens from "./Mens";
 import Kids from "./Kids";
@@ -20,12 +15,13 @@ import Itime from "./Itime";
 import AddCart from "./AddCart";
 // import { useState } from 'react'
 function App() {
-  const [inputData, setinputData] = useState();
+  const [inputData, setinputData] = useState([]);
+  console.log(inputData);
+  
   const [name, setname] = useState();
   const[getproduct,setgetproduct]=useState([])
   const[counts,setcounts]=useState(0)
- console.log(getproduct);
- console.log(counts);
+
  
   return (
     <>

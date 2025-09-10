@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState,useEffect } from 'react';
+import ShimmerProductCard from "./Shimmer"
 import { Link } from 'react-router-dom';
 
 const Women = () => {
@@ -14,7 +15,7 @@ const Women = () => {
        });
    }, []);
    if (!state) {
-     return <p>Loading data</p>;
+    return (<><ShimmerProductCard/></>)
    } else {
      return (
        <>

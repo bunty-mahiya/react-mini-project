@@ -1,7 +1,8 @@
-import React from 'react'
+
 import { Link } from 'react-router-dom'
-import Product from './Product'
 const Itime = ({inputData,name}) => {
+  console.log(inputData);
+  
     if (inputData=="") {
         return <h1 style={{textTransform:"capitalize",
             fontSize:"1.8rem",

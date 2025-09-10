@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from "react";
-import Navber from "./Navber";
+import { useEffect, useState } from "react";
 import Heropage from "./Heropage";
 import Text from "./Text";
 import Productbtn from "./Product-btn";
 import Contant from "./Contant";
 import { Link } from "react-router-dom";
+import ShimmerProductCard from "./Shimmer";
 const Product = () => {
   const [state, setstate] = useState(null);
   useEffect(() => {
@@ -18,7 +18,7 @@ const Product = () => {
       });
   }, []);
   if (!state) {
-    return 
+    return (<><ShimmerProductCard/></>)
   } else {
     return (
       <>
